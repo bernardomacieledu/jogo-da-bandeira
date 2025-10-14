@@ -1,5 +1,4 @@
 <script setup>
-import { RouterLink } from 'vue-router';
 import { useFlagStore } from '@/stores/flag';
 import { useAppStore } from '@/stores/app';
 import acerto from '@/assets/sound/sucess_sound.mp3';
@@ -11,7 +10,6 @@ const appStore = useAppStore();
 const flagStore = useFlagStore();
 
 let segundos = 0;
-let minutos = 0;
 appStore.sortearBandeiras(flagStore.flags);
 appStore.pontos = 0
 function verificarAcerto(id) {
@@ -69,8 +67,8 @@ var intervalo = setInterval(function () { segundo() }, 1000)
 
     <div>
       <p class="ponto">Pontuação: {{ appStore.pontos }}</p>
-</div>
-<div>
+    </div>
+    <div>
       <p @click="sair" class="router-link">Sair</p>
     </div>
   </main>

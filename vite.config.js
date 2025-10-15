@@ -11,9 +11,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'Portfolio',
-        short_name: 'Portfolio',
-        description: 'Conheça nosso portfólio',
+        name: 'Jogo da Bandeira',
+        short_name: 'BandeiraGame',
+        description: 'Jogo incrivel para você adivinhar as bandeiras dos paises do mundo',
         theme_color: '#ffffff',
         icons: [
           {
